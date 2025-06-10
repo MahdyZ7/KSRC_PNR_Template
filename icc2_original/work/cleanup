@@ -1,0 +1,2 @@
+\rm -rf qor_data outputs_icc2 compare_qor_data rpts_icc2 icc2_command.log icc2_output.txt logs_icc2 setup init_design *_lib
+

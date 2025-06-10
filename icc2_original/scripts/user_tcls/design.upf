@@ -1,0 +1,28 @@
+create_power_domain TOP
+
+create_supply_port VDD
+create_supply_port VSS
+create_supply_port VDD_ARR
+
+create_supply_net VDD 
+create_supply_net VSS
+create_supply_net VDD_ARR
+
+connect_supply_net VDD   -ports {VDD}
+connect_supply_net VSS -ports {VSS}
+connect_supply_net VDD_ARR -ports {VDD_ARR}
+
+set_domain_supply_net TOP \
+ -primary_power_net VDD -primary_ground_net VSS
+
+add_port_state VDD    -state {ON 0.72 0.90 0.945} 
+add_port_state VDD    -state {OFF 0.0} 
+add_port_state VSS    -state {ON 0.0} 
+add_port_state VSS    -state {OFF 0.0}
+add_port_state VDD_ARR  -state {OFF 0.0}
+add_port_state VDD_ARR  -state {ON 0.72 0.90 0.945}
+
+create_pst pst -supplies {VDD VSS}
+add_pst_state CCS_ONLY  -pst pst -state {ON OFF }
+
+

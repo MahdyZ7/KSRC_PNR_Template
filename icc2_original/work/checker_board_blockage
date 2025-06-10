@@ -1,0 +1,31 @@
+proc checker_board_blockage { x1 y1 x2 y2 x_div y_div percent name} {
+        set x_step [expr [expr [expr $x2 - $x1] * 1.0 ] / $x_div ]
+        set y_step [expr [expr [expr $y2 - $y1] * 1.0 ] / $y_div ]
+        if { $x_step < 0 } {
+                set $x_step [expr -1 * $x_step]
+        }
+        if { $y_step < 0 } {
+                set $y_step [expr -1 * $y_step]
+        }
+        set i 0
+        set j 0
+        set Y $y1
+        set fd [open "blockages.tcl" "w"]
+        while {$i < $x_div} {
+                incr i
+                set X1 $x1
+                set y1 $Y
+                set X2 [expr $x1 + $x_step]
+                while {$j < $y_div } {
+                        incr j
+                        set Y1 $y1
+                       set Y2 [expr $y1 + $y_step]
+                        puts $fd "create_placement_blockage -type  partial -blocked_percentage $percent -name ${name}${i}${j} -boundary {{$X1 $Y1} {$X2 $Y2}}"
+                        puts "create_placement_blockage -type partial -blocked_percentage $percent -name ${name}${i}${j} -boundary {{$X1 $Y1} {$X2 $Y2}}"
+                        set y1 $Y2
+                }
+                set x1 $X2
+                        set j 0
+        }
+        close $fd
+}

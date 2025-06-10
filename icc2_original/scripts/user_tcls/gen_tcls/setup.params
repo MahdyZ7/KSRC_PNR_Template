@@ -1,0 +1,85 @@
+#########################################################################################################
+#Unsetting all the environment variables
+#########################################################################################################
+source  unset.params
+
+#########################################################################################################
+#Variable settings for parasitic tcl file creation
+#########################################################################################################
+
+####List of various parasitic corners
+setenv  parasitic_corners_list "FuncCmax FuncCmaxDP FuncCmin FuncCminDP FuncRCmax FuncRCmaxDP FuncRCmin FuncRCminDP nominal"
+
+####Star rc tluplus or nxtgrd file path
+setenv  star_rc_parasitic_techfile_path "/media/22nmPDK/PlaceRoute_2/ICC2/TLUPlus/10M_2Mx_5Cx_1Jx_2Qx_LBthick"
+
+####Prefix of the tluplus or nxtgrd file
+setenv  parasitic_prefix "22fdsoi_10M_2Mx_5Cx_1Jx_2Qx_LBthick"
+
+####Postfix of the tluplus or nxtgrd file
+#setenv  parasitic_postfix "nxtgrd"
+setenv  parasitic_postfix "tluplus"
+
+####The name you would like to give for the read_parasitics tcl file generated
+setenv  parasitic_tcl_file_name "read_parasitics.tcl"
+
+####The layer map path
+setenv  parasitic_layer_map_path "/media/22nmPDK/PlaceRoute_2/ICC2/Techfiles/10M_2Mx_5Cx_1Jx_2Qx_LB"
+
+####The prefix of the layer map file
+setenv  parasitic_layer_map_prefix "22FDSOI_10M_2Mx_5Cx_1Jx_2Qx_LB_StarRCXT_MW"
+
+####The postfix of the layer map file
+setenv  parasitic_layer_map_postfix "map"
+
+#########################################################################################################
+#Finished variable settings for parasitic tcl file creation
+#########################################################################################################
+
+#########################################################################################################
+#Variable settings for creating mcmm setup tcl file
+#########################################################################################################
+##All pvt corners in tsmc 22nm
+##ssg0p81v125c ssg0p81v0c ssg0p81vm40c tt0p9v25c tt0p9v85c ffg0p99v125c ffg0p99v0c ffg0p99vm40c
+##ssg0p72v125c ssg0p72v0c ssg0p72vm40c tt0p8v25c tt0p8v85c ffg0p88v125c ffg0p88v0c ffg0p88vm40c
+##All rc corners
+##cworst rcworst cbest rcbest cworst_T rcworst_T cbest_T rcbest_T typ
+#########################################################################################################
+##SDC names are expected to be <mode>.sdc , <corner>.sdc, <scenario.sdc> 
+###Please specify various design modes here
+###eg : func, scan_shift, scan_Capture etc
+##setenv  design_modes        "func"
+##
+##setenv  setup_rc_corners     "rcworst_T cworst_T typ"
+##
+##setenv  hold_rc_corners      "rcbest cbest typ"
+##
+##setenv  setup_pvt_corners    "ssg0p81v125c ssg0p81vm40c tt0p9v25c"
+##
+##setenv  hold_pvt_corners     "ffg0p99v125c ffg0p99vm40c tt0p9v25c"
+##
+####setenv max_transition_values "0.2 0.2 0.2 0.2 0.2 0.2 0.2"
+##set max_transition_values = (0.2 0.2 0.2 0.2 0.2 0.2 0.2)
+##
+##setenv  mcmm_tcl_file_name   "mcmm_setup.tcl"
+##
+##setenv  design_sdc_path      ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+########################################################################
+#
+#########################################################################
+source unset.params
+#########################################################################
+
+
+#########################################################################
+#Specify design details
+#########################################################################
+
+setenv my_design_name 			"BIGDIV_5GHz"
+setenv my_library_suffix 		"_lib"
+
+setenv my_tech_file 					"/KSRC_lab_share/GF22NMFDSOI/PDK/22nmPDK_OCT/PDK_221126_014212_660/PlaceRoute/ICC2/Techfiles/10M_2Mx_5Cx_1Jx_2Qx_LB/22FDSOI_10M_2Mx_5Cx_1Jx_2Qx_LB_104cpp_8t_mw.tf"
+setenv my_tcl_antenna_rule_file 			"/KSRC_lab_share/GF22NMFDSOI/PDK/22nmPDK_OCT/PDK_221126_014212_660/PlaceRoute/ICC2/Techfiles/10M_2Mx_5Cx_1Jx_2Qx_LB/22FDSOI_10M_2Mx_5Cx_1Jx_2Qx_LB_antenna_rules.tcl"
+setenv my_tcl_user_redundant_via_mapping_file  		""
+setenv my_chip_finish_signal_em_constraint_format 	"ALF"
+setenv my_chip_finish_signal_em_constraint_file 	""
+
+setenv my_write_gds_layer_map_file 			"/KSRC_lab_share/GF22NMFDSOI/PDK/22nmPDK_OCT/PDK_221126_014212_660/PlaceRoute/ICC2/Techfiles/10M_2Mx_5Cx_1Jx_2Qx_LB/22FDSOI_10M_2Mx_5Cx_1Jx_2Qx_LB_icc2gds.layermap"
+
+setenv my_reference_library_list 	"/KSRC_lab_share/GF22NMFDSOI/ndm/csc20l.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/csc20sl.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/csc24l.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/csc24sl.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/csc28l.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/csc28sl.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/GF22FDX_SC8T_104CPP_SHIFT_CSL.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/io_staggered.ndm  /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R1PH_NFHN_W00256B046M02C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R1PH_NFHN_W00256B128M02C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/fll_DCO.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R1PH_NFHN_W01024B032M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_BFRG_W02560B076M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_BFRG_W08192B076M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_BFRG_W32768B039M16C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_NFRG_W02048B032M04C128.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_NFRG_W02048B032M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_NFRG_W04096B032M04C128.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_BFRG_W08192B039M16C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_S1D_BFRG_W04096B076M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R2PV_WFVG_W00512B032M04C128.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R1PH_NFHN_W00128B064M04C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/IN22FDX_R1PH_NFHN_W00512B064M02C256.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/generic_delay_D4_O1_1P875_CG0.ndm /KSRC_lab_share/GF22NMFDSOI/ndm/generic_delay_D4_O1_3P750_CG0.ndm"
+ 
+setenv min_routing_layer 		"M2"
+setenv max_routing_layer		"C5"
+
+setenv my_verilog_netlist_files 	"../../front_end/BIGDIV_5GHz.v"
+setenv my_def_scan_file			""
+setenv my_def_files			""
+setenv scan_def_flow                    0
+setenv my_upf_file 			"../scripts/user_tcls/design.upf"
+setenv my_tcl_mcmm_setup_file 		"../scripts/user_tcls/mcmm_setup.tcl"
+setenv my_tcl_parasitic_setup_file 	"../scripts/user_tcls/read_parasitics.tcl"
+####<create_voltage_area, placement bound, power switch creation and level shifter insertion, etc>
+setenv my_tcl_mv_setup_file 		"../scripts/user_tcls/mv_setup.tcl"
+setenv my_placement_constraint_files    "../scripts/user_tcls/placement_constraints.tcl"
+setenv my_tcl_lib_cell_purpose_file 	"../scripts/user_tcls/set_lib_cell_purpose.tcl"
+setenv my_tcl_pg_creation_file 		"../scripts/user_tcls/pns.tcl"
+setenv my_tcl_cts_ndr_rule_file 	"../scripts/user_tcls/cts_ndr.tcl"
+##setenv my_dont_use_file                 "../scripts/user_tcls/dont_use.tcl"
+setenv my_tcl_tech_setup_file  		"./rm_icc2_pnr_scripts/init_design.tech_setup.tcl"
+setenv my_floorplan_file 		"../scripts/user_tcls/fp.tcl"
+setenv my_preroute_cts_primary_corner   ""
+
+setenv base_scenarios "${my_design_name}::ssg0p72vm40c_FuncCmax ${my_design_name}::ssg0p72vm40c_FuncRCmax ${my_design_name}::tt0p80v25c_nominal"
+setenv hold_scenarios "${my_design_name}::ffg0p88v125c_FuncCmin ${my_design_name}::ffg0p88v125c_FuncRCmin"
+setenv all_scenarios "${base_scenarios} ${hold_scenarios}"
+
+# set base_scenarios "${my_design_name}::ssg0p72vm40c_FuncCmax ${my_design_name}::ssg0p72vm40c_FuncRCmax ${my_design_name}::tt0p90v25c_nominal"
+# set hold_scenarios "${my_design_name}::ffg0p945v125c_FuncCmin ${my_design_name}::ffg0p945v125c_FuncRCmin"
+# set all_scenarios "${base_scenarios} ${hold_scenarios}"
+
+setenv my_place_opt_active_scenario_list      "${all_scenarios}"
+setenv my_clock_opt_cts_active_scenario_list  "${all_scenarios}"
+setenv my_route_opt_active_scenario_list      "${all_scenarios}"
+setenv my_chip_finish_active_scenario_list    "${all_scenarios}"
+setenv my_icv_in_design_active_scenario_list  "" 
+setenv my_timing_eco_active_scenario_list     "" 
+setenv my_route_focused_scenario              "" 
+setenv my_chip_finish_signal_em_scenario      "" ;# Specify an active scenario which is enabled for setup and hold analysis;
+
+# Define primary corner for CTS (typically worst setup corner)
+setenv my_preroute_cts_primary_corner   "${my_design_name}::ssg0p72vm40c_FuncCmax"
+# Define focused scenario for routing (typically most critical)
+setenv my_route_focused_scenario        "${my_design_name}::ssg0p72vm40c_FuncCmax"
+# Signal EM analysis scenario (use setup-critical scenario)
+setenv my_chip_finish_signal_em_scenario "${my_design_name}::ssg0p72vm40c_FuncCmax"
+# ICV in-design scenario (use representative scenario)
+setenv my_icv_in_design_active_scenario_list  "${my_design_name}::tt0p80v25c_nominal"
+# Timing ECO scenario (use most critical scenarios)
+setenv my_timing_eco_active_scenario_list     "${base_scenarios}"
+
+setenv my_eco_opt_active_scenario_list    "${base_scenarios}"
+setenv my_icv_signoff_active_scenario_list "${all_scenarios}"
+setenv my_pt_signoff_active_scenario_list  "${all_scenarios}"
+
+setenv my_chip_finish_metal_filler_prefix "RM_filler"
+setenv my_chip_finish_non_metal_filler_lib_cell_list "SC8T_FILLX128_CSC20L SC8T_FILLX16_CSC20L SC8T_FILLX1_CSC20L SC8T_FILLX2_CSC20L SC8T_FILLX32_CSC20L SC8T_FILLX3_CSC20L SC8T_FILLX4_CSC20L SC8T_FILLX5_CSC20L SC8T_FILLX64_CSC20L SC8T_FILLX8_CSC20L SC8T_FILLX128_CSC20SL SC8T_FILLX16_CSC20SL SC8T_FILLX1_CSC20SL SC8T_FILLX2_CSC20SL SC8T_FILLX32_CSC20SL SC8T_FILLX3_CSC20SL SC8T_FILLX4_CSC20SL SC8T_FILLX5_CSC20SL SC8T_FILLX64_CSC20SL SC8T_FILLX8_CSC20SL SC8T_FILLX128_CSC24L SC8T_FILLX16_CSC24L SC8T_FILLX1_CSC24L SC8T_FILLX2_CSC24L SC8T_FILLX32_CSC24L SC8T_FILLX3_CSC24L SC8T_FILLX4_CSC24L SC8T_FILLX5_CSC24L SC8T_FILLX64_CSC24L SC8T_FILLX8_CSC24L SC8T_FILLX128_CSC24SL SC8T_FILLX16_CSC24SL SC8T_FILLX1_CSC24SL SC8T_FILLX2_CSC24SL SC8T_FILLX32_CSC24SL SC8T_FILLX3_CSC24SL SC8T_FILLX4_CSC24SL SC8T_FILLX5_CSC24SL SC8T_FILLX64_CSC24SL SC8T_FILLX8_CSC24SL SC8T_FILLX128_CSC28L SC8T_FILLX16_CSC28L SC8T_FILLX1_CSC28L SC8T_FILLX2_CSC28L SC8T_FILLX32_CSC28L SC8T_FILLX3_CSC28L SC8T_FILLX4_CSC28L SC8T_FILLX5_CSC28L SC8T_FILLX64_CSC28L SC8T_FILLX8_CSC28L SC8T_FILLX128_CSC28SL SC8T_FILLX16_CSC28SL SC8T_FILLX1_CSC28SL SC8T_FILLX2_CSC28SL SC8T_FILLX32_CSC28SL SC8T_FILLX3_CSC28SL SC8T_FILLX4_CSC28SL SC8T_FILLX5_CSC28SL SC8T_FILLX64_CSC28SL SC8T_FILLX8_CSC28SL"
+setenv my_chip_finish_metal_filler_lib_cell_list "SC8T_DECAPX128_CSC20L SC8T_DECAPX16_CSC20L SC8T_DECAPX32_CSC20L SC8T_DECAPX4_CSC20L SC8T_DECAPX5_CSC20L SC8T_DECAPX64_CSC20L SC8T_DECAPX8_CSC20L SC8T_DECAPX128_CSC20SL SC8T_DECAPX16_CSC20SL SC8T_DECAPX32_CSC20SL SC8T_DECAPX4_CSC20SL SC8T_DECAPX5_CSC20SL SC8T_DECAPX64_CSC20SL SC8T_DECAPX8_CSC20SL SC8T_DECAPX128_CSC24L SC8T_DECAPX16_CSC24L SC8T_DECAPX32_CSC24L SC8T_DECAPX4_CSC24L SC8T_DECAPX5_CSC24L SC8T_DECAPX64_CSC24L SC8T_DECAPX8_CSC24L SC8T_DECAPX128_CSC24SL SC8T_DECAPX16_CSC24SL SC8T_DECAPX32_CSC24SL SC8T_DECAPX4_CSC24SL SC8T_DECAPX5_CSC24SL SC8T_DECAPX64_CSC24SL SC8T_DECAPX8_CSC24SL SC8T_DECAPX128_CSC28L SC8T_DECAPX16_CSC28L SC8T_DECAPX32_CSC28L SC8T_DECAPX4_CSC28L SC8T_DECAPX5_CSC28L SC8T_DECAPX64_CSC28L SC8T_DECAPX8_CSC28L SC8T_DECAPX128_CSC28SL SC8T_DECAPX16_CSC28SL SC8T_DECAPX32_CSC28SL SC8T_DECAPX4_CSC28SL SC8T_DECAPX5_CSC28SL SC8T_DECAPX64_CSC28SL SC8T_DECAPX8_CSC28SL"
+
+
+setenv my_chip_finish_signal_em_fixing 	     false
+
+
+
+
+###
+##Currently leaving In Design ICV, Red Hawk, PT ECO, Herarchical flow settings
+

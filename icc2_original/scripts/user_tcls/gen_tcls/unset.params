@@ -1,0 +1,11 @@
+
+unsetenv parasitic_corners_list
+unsetenv star_rc_parasitic_techfile_path
+unsetenv parasitic_prefix
+unsetenv parasitic_postfix
+unsetenv parasitic_tcl_file_name
+unsetenv parasitic_layer_map_path
+unsetenv parasitic_layer_map_prefix
+unsetenv parasitic_layer_map_postfix
+
+

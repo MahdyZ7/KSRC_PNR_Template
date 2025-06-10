@@ -1,0 +1,15 @@
+1. Replace the tech file .tf  with one provided by MUSE.
+2. Regenerate the hvt/rvt ndm files with new tech file. Have the directory prepared to generate memory ndm as soon as memories are ready.
+2. Regenerate tluplus/nxtgrd files with itf for latest versions
+
+
+###Please put in all user created tcl files in this directory
+
+- upf file
+- Read parasitic tcl file
+- mcmm definition tcl
+- placement constraint file with VT spacing and all..
+- lib cell tcl file. This contains dont use and the clok bufs/inv to be used
+- cts ndr tcl file
+
+

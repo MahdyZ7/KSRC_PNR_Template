@@ -1,0 +1,1379 @@
+# 
+# IC Compiler II write_def
+# Release      : R-2020.09-SP6
+# User Name    : asif
+# Date         : Mon Nov  8 10:42:58 2021
+# 
+VERSION 5.7 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN al_saqr ;
+UNITS DISTANCE MICRONS 1000 ;
+PROPERTYDEFINITIONS
+COMPONENTPIN ACCESS_DIRECTION STRING ;
+END PROPERTYDEFINITIONS
+#DIEAREA ( 0 0 ) ( 0 2665280 ) ( 2665296 2665280 ) ( 2665296 0 ) ;
+COMPONENTS 165 ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 69904 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 519158 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 69904 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 217908 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 371154 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 519158 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 69904 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 217908 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 371154 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 519158 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 217908 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 371154 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 519158 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 69904 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 217908 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_0__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 371154 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 245661 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 334764 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 61445 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_1__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 151085 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_2__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 245661 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 334764 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 61445 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_3__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 151085 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1394841 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1847367 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1700095 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_4__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1542113 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 618259 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 707359 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 440059 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_5__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 529159 ) FN ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 1129816 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 677083 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 824355 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_6__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 982544 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 439453 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_2__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 617653 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_3__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_4__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_5__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 618259 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_6__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 706753 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_7__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_8__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_9__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 707359 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_10__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_11__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_12__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 440059 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_13__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 528553 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_14__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 529159 ) N ;
+ - i_host_domain/i_l2_subsystem/CUTS_7__bank_i/bank_cut_15__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 529159 ) N ;
+ - i_host_domain/i_apb_subsystem/i_alsaqr_clk_rst_gen/i_fll_soc gf22_FLL + FIXED ( 695679 852400 ) N ;
+ - i_host_domain/i_apb_subsystem/i_alsaqr_clk_rst_gen/i_fll_per gf22_FLL + FIXED ( 1294312 852400 ) N ;
+ - i_host_domain/i_apb_subsystem/i_alsaqr_clk_rst_gen/i_fll_cluster gf22_FLL + FIXED ( 1876168 852400 ) FN ;
+ - i_host_domain/axi_hyperbus/i_phy/i_trx/i_delay_tx_clk_90/i_delay generic_delay_D4_O1_3P750_CG0 + FIXED ( 1612694 852400 ) N ;
+ - i_host_domain/axi_hyperbus/i_phy/i_trx/i_delay_rx_rwds_90/i_delay generic_delay_D4_O1_3P750_CG0 + FIXED ( 978375 852400 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_0__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 991731 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_0__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 1080831 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_1__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 991731 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_1__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 1080831 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_2__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 991731 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_2__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 1080831 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_3__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 812991 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_3__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 902631 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_4__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 812991 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_4__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 216632 902631 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_5__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 991731 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_5__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 1080831 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_6__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 812991 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_6__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2155058 902631 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_7__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 812378 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_7__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 902018 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_8__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 991118 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_8__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2307816 1080218 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_9__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 991118 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_9__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 1080218 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_10__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 812378 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_10__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2455820 902018 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_11__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 812991 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_11__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 372380 902631 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_12__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 812991 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_12__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 518936 902631 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_13__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 812991 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_13__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 902631 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_14__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 991731 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_14__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 2007054 1080831 ) FN ;
+ - cluster_i/tcdm_banks_i/banks_gen_15__i_bank/bank_cut_0__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 991731 ) N ;
+ - cluster_i/tcdm_banks_i/banks_gen_15__i_bank/bank_cut_1__i_macro IN22FDX_S1D_NFRG_W02048B032M04C256 + FIXED ( 70076 1080831 ) N ;
+END COMPONENTS
+PINS 122 ;
+ - rtc_i + NET rtc_i + DIRECTION INPUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 2442860 0 ) N ;
+ - rst_ni + NET rst_ni + DIRECTION INPUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 1998780 0 ) N ;
+ - pad_hyper_dq0[7] + NET pad_hyper_dq0[7] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[6] + NET pad_hyper_dq0[6] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[5] + NET pad_hyper_dq0[5] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[4] + NET pad_hyper_dq0[4] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[3] + NET pad_hyper_dq0[3] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[2] + NET pad_hyper_dq0[2] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[1] + NET pad_hyper_dq0[1] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq0[0] + NET pad_hyper_dq0[0] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_dq1[7] + NET pad_hyper_dq1[7] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 1554700 0 ) N ;
+ - pad_hyper_dq1[6] + NET pad_hyper_dq1[6] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 1110620 0 ) N ;
+ - pad_hyper_dq1[5] + NET pad_hyper_dq1[5] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 666540 0 ) N ;
+ - pad_hyper_dq1[4] + NET pad_hyper_dq1[4] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 222460 0 ) N ;
+ - pad_hyper_dq1[3] + NET pad_hyper_dq1[3] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 2474003 ) N ;
+ - pad_hyper_dq1[2] + NET pad_hyper_dq1[2] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 2093393 ) N ;
+ - pad_hyper_dq1[1] + NET pad_hyper_dq1[1] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 1712783 ) N ;
+ - pad_hyper_dq1[0] + NET pad_hyper_dq1[0] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 1332173 ) N ;
+ - pad_hyper_ck + NET pad_hyper_ck + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_ckn + NET pad_hyper_ckn + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_csn0 + NET pad_hyper_csn0 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_csn1 + NET pad_hyper_csn1 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_rwds0 + NET pad_hyper_rwds0 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_rwds1 + NET pad_hyper_rwds1 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_hyper_reset + NET pad_hyper_reset + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[7] + NET pad_axi_hyper_dq0[7] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[6] + NET pad_axi_hyper_dq0[6] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[5] + NET pad_axi_hyper_dq0[5] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[4] + NET pad_axi_hyper_dq0[4] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[3] + NET pad_axi_hyper_dq0[3] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[2] + NET pad_axi_hyper_dq0[2] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[1] + NET pad_axi_hyper_dq0[1] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq0[0] + NET pad_axi_hyper_dq0[0] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_dq1[7] + NET pad_axi_hyper_dq1[7] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 951563 ) N ;
+ - pad_axi_hyper_dq1[6] + NET pad_axi_hyper_dq1[6] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 570953 ) N ;
+ - pad_axi_hyper_dq1[5] + NET pad_axi_hyper_dq1[5] + DIRECTION INOUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 2665046 190253 ) N ;
+ - pad_axi_hyper_dq1[4] + NET pad_axi_hyper_dq1[4] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 2474540 2664480 ) N ;
+ - pad_axi_hyper_dq1[3] + NET pad_axi_hyper_dq1[3] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 2093900 2664480 ) N ;
+ - pad_axi_hyper_dq1[2] + NET pad_axi_hyper_dq1[2] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 1713260 2664480 ) N ;
+ - pad_axi_hyper_dq1[1] + NET pad_axi_hyper_dq1[1] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 1332620 2664480 ) N ;
+ - pad_axi_hyper_dq1[0] + NET pad_axi_hyper_dq1[0] + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 951980 2664480 ) N ;
+ - pad_axi_hyper_ck + NET pad_axi_hyper_ck + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_ckn + NET pad_axi_hyper_ckn + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_csn0 + NET pad_axi_hyper_csn0 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_csn1 + NET pad_axi_hyper_csn1 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_rwds0 + NET pad_axi_hyper_rwds0 + DIRECTION INOUT + USE SIGNAL ;
+ - pad_axi_hyper_rwds1 + NET pad_axi_hyper_rwds1 + DIRECTION INOUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 571340 2664480 ) N ;
+ - pad_axi_hyper_reset + NET pad_axi_hyper_reset + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[63] + NET pad_gpio[63] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[62] + NET pad_gpio[62] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[61] + NET pad_gpio[61] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[60] + NET pad_gpio[60] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[59] + NET pad_gpio[59] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[58] + NET pad_gpio[58] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[57] + NET pad_gpio[57] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[56] + NET pad_gpio[56] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[55] + NET pad_gpio[55] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[54] + NET pad_gpio[54] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[53] + NET pad_gpio[53] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[52] + NET pad_gpio[52] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[51] + NET pad_gpio[51] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[50] + NET pad_gpio[50] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[49] + NET pad_gpio[49] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[48] + NET pad_gpio[48] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[47] + NET pad_gpio[47] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[46] + NET pad_gpio[46] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[45] + NET pad_gpio[45] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[44] + NET pad_gpio[44] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[43] + NET pad_gpio[43] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[42] + NET pad_gpio[42] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[41] + NET pad_gpio[41] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[40] + NET pad_gpio[40] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[39] + NET pad_gpio[39] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[38] + NET pad_gpio[38] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[37] + NET pad_gpio[37] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[36] + NET pad_gpio[36] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[35] + NET pad_gpio[35] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[34] + NET pad_gpio[34] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[33] + NET pad_gpio[33] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[32] + NET pad_gpio[32] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[31] + NET pad_gpio[31] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[30] + NET pad_gpio[30] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[29] + NET pad_gpio[29] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[28] + NET pad_gpio[28] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[27] + NET pad_gpio[27] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[26] + NET pad_gpio[26] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[25] + NET pad_gpio[25] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[24] + NET pad_gpio[24] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[23] + NET pad_gpio[23] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[22] + NET pad_gpio[22] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[21] + NET pad_gpio[21] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[20] + NET pad_gpio[20] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[19] + NET pad_gpio[19] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[18] + NET pad_gpio[18] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[17] + NET pad_gpio[17] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[16] + NET pad_gpio[16] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[15] + NET pad_gpio[15] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[14] + NET pad_gpio[14] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[13] + NET pad_gpio[13] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[12] + NET pad_gpio[12] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[11] + NET pad_gpio[11] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[10] + NET pad_gpio[10] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[9] + NET pad_gpio[9] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[8] + NET pad_gpio[8] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[7] + NET pad_gpio[7] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[6] + NET pad_gpio[6] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[5] + NET pad_gpio[5] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[4] + NET pad_gpio[4] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[3] + NET pad_gpio[3] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[2] + NET pad_gpio[2] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[1] + NET pad_gpio[1] + DIRECTION INOUT + USE SIGNAL ;
+ - pad_gpio[0] + NET pad_gpio[0] + DIRECTION INOUT + USE SIGNAL ;
+ - cva6_uart_rx_i + NET cva6_uart_rx_i + DIRECTION INPUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 40 800 )
+   + PLACED ( 190700 2664480 ) N ;
+ - cva6_uart_tx_o + NET cva6_uart_tx_o + DIRECTION OUTPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 2474003 ) N ;
+ - jtag_TCK + NET jtag_TCK + DIRECTION INPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 2093393 ) N ;
+ - jtag_TMS + NET jtag_TMS + DIRECTION INPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 1712783 ) N ;
+ - jtag_TDI + NET jtag_TDI + DIRECTION INPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 1332173 ) N ;
+ - jtag_TRSTn + NET jtag_TRSTn + DIRECTION INPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 951563 ) N ;
+ - jtag_TDO_data + NET jtag_TDO_data + DIRECTION OUTPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 570953 ) N ;
+ - jtag_TDO_driven + NET jtag_TDO_driven + DIRECTION OUTPUT + USE SIGNAL
+   + LAYER C1 ( 0 0 ) ( 250 44 )
+   + PLACED ( 0 190253 ) N ;
+ - VDD + NET VDD + SPECIAL + DIRECTION INPUT + USE POWER ;
+ - VSS + NET VSS + SPECIAL + DIRECTION INPUT + USE GROUND ;
+END PINS
+PINPROPERTIES 27 ;
+ - PIN rtc_i
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN rst_ni
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN pad_hyper_dq1[7]
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN pad_hyper_dq1[6]
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN pad_hyper_dq1[5]
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN pad_hyper_dq1[4]
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+ - PIN pad_hyper_dq1[3]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_hyper_dq1[2]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_hyper_dq1[1]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_hyper_dq1[0]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_axi_hyper_dq1[7]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_axi_hyper_dq1[6]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_axi_hyper_dq1[5]
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+ - PIN pad_axi_hyper_dq1[4]
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN pad_axi_hyper_dq1[3]
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN pad_axi_hyper_dq1[2]
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN pad_axi_hyper_dq1[1]
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN pad_axi_hyper_dq1[0]
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN pad_axi_hyper_rwds1
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN cva6_uart_rx_i
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+ - PIN cva6_uart_tx_o
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TCK
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TMS
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TDI
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TRSTn
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TDO_data
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+ - PIN jtag_TDO_driven
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+END PINPROPERTIES
+BLOCKAGES 480 ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 1150625 ) ( 216632 1168557 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 1150625 ) ( 518936 1168557 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 1150625 ) ( 2160114 1168557 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1150012 ) ( 2312872 1167944 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 1150012 ) ( 2460876 1167944 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 1094523 ) ( 216632 1150625 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 1094523 ) ( 518936 1150625 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 1094523 ) ( 2155058 1150625 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1093910 ) ( 2307816 1150012 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 1093910 ) ( 2455820 1150012 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 1080831 ) ( 2012110 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 1080831 ) ( 2160114 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1080831 ) ( 2312872 1093910 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 1080831 ) ( 70076 1168557 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 1080831 ) ( 354636 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 1080831 ) ( 656940 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 1080831 ) ( 216632 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 1080831 ) ( 518936 1094523 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 1080218 ) ( 2605296 1167944 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 1080218 ) ( 2460876 1093910 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 1080218 ) ( 2312872 1080831 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 1079457 ) ( 2605296 1080218 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 1079457 ) ( 354636 1080831 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 1079457 ) ( 656940 1080831 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 1061525 ) ( 354636 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 1061525 ) ( 656940 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 1061525 ) ( 216632 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 1061525 ) ( 518936 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1078844 ) ( 2605296 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 1061525 ) ( 2012110 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 1061525 ) ( 2160114 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1060912 ) ( 2312872 1078844 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 1060912 ) ( 2460876 1078844 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 1005423 ) ( 2155058 1061525 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 1005423 ) ( 216632 1061525 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 1005423 ) ( 518936 1061525 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 1004810 ) ( 2307816 1060912 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 1004810 ) ( 2455820 1060912 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 991731 ) ( 2012110 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 991731 ) ( 2160114 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 991731 ) ( 2312872 1004810 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 991731 ) ( 70076 1079457 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 991731 ) ( 354636 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 991731 ) ( 656940 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 991731 ) ( 216632 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 991731 ) ( 518936 1005423 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 991118 ) ( 2605296 1078844 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 991118 ) ( 2460876 1004810 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 991118 ) ( 2312872 991731 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 990357 ) ( 2605296 991118 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 990357 ) ( 354636 991731 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 990357 ) ( 656940 991731 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 972425 ) ( 354636 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 972425 ) ( 656940 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 972425 ) ( 216632 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 972425 ) ( 518936 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 989744 ) ( 2605296 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 972425 ) ( 2012110 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 972425 ) ( 2160114 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 971812 ) ( 2312872 989744 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 971812 ) ( 2460876 989744 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 916323 ) ( 2155058 972425 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 916323 ) ( 216632 972425 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 916323 ) ( 518936 972425 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 915710 ) ( 2307816 971812 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 915710 ) ( 2455820 971812 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 902631 ) ( 2012110 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 902631 ) ( 2160114 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 902631 ) ( 2312872 915710 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 902631 ) ( 70076 990357 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 902631 ) ( 354636 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 902631 ) ( 656940 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 902631 ) ( 216632 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 902631 ) ( 518936 916323 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 902018 ) ( 2605296 989744 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 902018 ) ( 2460876 915710 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 902018 ) ( 2312872 902631 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 900717 ) ( 2605296 902018 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 900717 ) ( 354636 902631 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 900717 ) ( 656940 902631 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 882785 ) ( 354636 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 882785 ) ( 656940 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 882785 ) ( 216632 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 882785 ) ( 518936 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 900104 ) ( 2605296 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 882785 ) ( 2012110 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 882785 ) ( 2160114 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 882172 ) ( 2312872 900104 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 882172 ) ( 2460876 900104 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 826683 ) ( 2155058 882785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 826683 ) ( 216632 882785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 826683 ) ( 518936 882785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 812991 ) ( 70076 900717 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 812991 ) ( 216632 826683 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 812991 ) ( 518936 826683 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 826070 ) ( 2307816 882172 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 826070 ) ( 2455820 882172 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 812378 ) ( 2605296 900104 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 812991 ) ( 2160114 826683 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 812991 ) ( 2312872 826070 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 812378 ) ( 2460876 826070 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 777153 ) ( 518936 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 777153 ) ( 824355 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 777153 ) ( 1129816 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 776547 ) ( 216632 794479 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 777153 ) ( 1547169 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 777153 ) ( 1852423 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 777153 ) ( 2160114 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 777153 ) ( 2312872 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 777153 ) ( 2460876 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 721051 ) ( 2155058 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 721051 ) ( 2307816 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 721051 ) ( 2455820 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 721051 ) ( 1542113 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 721051 ) ( 1847367 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 721051 ) ( 518936 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 721051 ) ( 824355 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 721051 ) ( 1129816 777153 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 720445 ) ( 216632 776547 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 707359 ) ( 2605296 795085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 707359 ) ( 2012110 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 707359 ) ( 2160114 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 707359 ) ( 2312872 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 707359 ) ( 2460876 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 707359 ) ( 1399897 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 707359 ) ( 1705151 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 707359 ) ( 1547169 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 707359 ) ( 1852423 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 707359 ) ( 962359 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 707359 ) ( 1267820 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 707359 ) ( 824355 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 707359 ) ( 1129816 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 707359 ) ( 354636 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 707359 ) ( 656940 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 707359 ) ( 518936 721051 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 707359 ) ( 216632 720445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 706753 ) ( 70076 794479 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 706753 ) ( 354636 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 705985 ) ( 1985371 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 705985 ) ( 2605296 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 705985 ) ( 1680117 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 705985 ) ( 962359 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 705985 ) ( 1267820 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 705985 ) ( 656940 707359 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 705985 ) ( 354636 706753 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 705379 ) ( 216632 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 688053 ) ( 354636 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 688053 ) ( 656940 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 688053 ) ( 518936 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 687447 ) ( 216632 705379 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 688053 ) ( 962359 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 688053 ) ( 1267820 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 688053 ) ( 824355 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 688053 ) ( 1129816 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 688053 ) ( 1399897 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 688053 ) ( 1705151 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 688053 ) ( 1547169 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 688053 ) ( 1852423 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 688053 ) ( 2012110 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 688053 ) ( 2160114 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 688053 ) ( 2312872 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 688053 ) ( 2460876 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 631951 ) ( 2155058 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 631951 ) ( 2307816 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 631951 ) ( 2455820 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 631951 ) ( 1542113 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 631951 ) ( 1847367 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 631951 ) ( 824355 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 631951 ) ( 1129816 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 631951 ) ( 518936 688053 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 631345 ) ( 216632 687447 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 618259 ) ( 2605296 705985 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 618259 ) ( 2012110 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 618259 ) ( 2160114 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 618259 ) ( 2312872 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 618259 ) ( 2460876 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 618259 ) ( 1399897 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 618259 ) ( 1705151 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 618259 ) ( 1547169 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 618259 ) ( 1852423 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 618259 ) ( 962359 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 618259 ) ( 1267820 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 618259 ) ( 824355 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 618259 ) ( 1129816 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 618259 ) ( 354636 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 618259 ) ( 656940 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 618259 ) ( 518936 631951 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 618259 ) ( 216632 631345 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 617653 ) ( 70076 705379 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 617653 ) ( 354636 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 616885 ) ( 1985371 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 616885 ) ( 2605296 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 616885 ) ( 1680117 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 616885 ) ( 962359 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 616885 ) ( 1267820 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 616885 ) ( 656940 618259 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 616885 ) ( 354636 617653 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 616279 ) ( 216632 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 598953 ) ( 354636 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 598953 ) ( 656940 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 598953 ) ( 518936 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 598347 ) ( 216632 616279 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 598953 ) ( 962359 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 598953 ) ( 1267820 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 598953 ) ( 824355 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 598953 ) ( 1129816 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 598953 ) ( 1399897 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 598953 ) ( 1705151 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 598953 ) ( 1547169 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 598953 ) ( 1852423 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 598953 ) ( 2012110 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 598953 ) ( 2160114 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 598953 ) ( 2312872 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 598953 ) ( 2460876 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 542851 ) ( 2155058 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 542851 ) ( 2307816 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 542851 ) ( 2455820 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 542851 ) ( 1542113 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 542851 ) ( 1847367 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 542851 ) ( 824355 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 542851 ) ( 1129816 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 542851 ) ( 518936 598953 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 542245 ) ( 216632 598347 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 529159 ) ( 2605296 616885 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 529159 ) ( 2012110 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 529159 ) ( 2160114 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 529159 ) ( 2312872 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 529159 ) ( 2460876 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 529159 ) ( 1399897 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 529159 ) ( 1705151 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 529159 ) ( 1547169 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 529159 ) ( 1852423 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 529159 ) ( 962359 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 529159 ) ( 1267820 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 529159 ) ( 824355 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 529159 ) ( 1129816 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 529159 ) ( 354636 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 529159 ) ( 656940 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 529159 ) ( 518936 542851 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 529159 ) ( 216632 542245 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 528553 ) ( 70076 616279 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 528553 ) ( 354636 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 527785 ) ( 1985371 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 527785 ) ( 2605296 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 527785 ) ( 1680117 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 527785 ) ( 962359 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 527785 ) ( 1267820 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 372380 527785 ) ( 656940 529159 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 527785 ) ( 354636 528553 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 527179 ) ( 216632 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 349580 509853 ) ( 354636 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 651884 509853 ) ( 656940 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 509853 ) ( 518936 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 509247 ) ( 216632 527179 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 509853 ) ( 962359 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 509853 ) ( 1267820 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 509853 ) ( 824355 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 509853 ) ( 1129816 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 509853 ) ( 1399897 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 509853 ) ( 1705151 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 509853 ) ( 1547169 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 509853 ) ( 1852423 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 509853 ) ( 2012110 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 509853 ) ( 2160114 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 509853 ) ( 2312872 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 509853 ) ( 2460876 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 510384 453751 ) ( 518936 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 208080 453145 ) ( 216632 509247 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 439453 ) ( 70076 527179 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 505328 440059 ) ( 518936 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 203024 440059 ) ( 216632 453145 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 453751 ) ( 824355 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 453751 ) ( 1129816 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 440059 ) ( 824355 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 440059 ) ( 1129816 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 453751 ) ( 1542113 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 453751 ) ( 1847367 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 440059 ) ( 1547169 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 440059 ) ( 1852423 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 453751 ) ( 2155058 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 453751 ) ( 2307816 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 453751 ) ( 2455820 509853 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 440059 ) ( 2605296 527785 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 440059 ) ( 2160114 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 440059 ) ( 2312872 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 440059 ) ( 2460876 453751 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 404558 ) ( 217908 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 404558 ) ( 371154 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 404558 ) ( 519158 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 404558 ) ( 824355 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 404558 ) ( 1129816 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 404558 ) ( 1547169 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 404558 ) ( 1852423 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 404558 ) ( 2160114 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 404558 ) ( 2312872 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 404558 ) ( 2460876 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 348456 ) ( 2155058 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 348456 ) ( 2307816 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 348456 ) ( 2455820 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 348456 ) ( 1542113 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 348456 ) ( 1847367 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 348456 ) ( 824355 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 348456 ) ( 1129816 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 207908 348456 ) ( 217908 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 355912 348456 ) ( 371154 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 509158 348456 ) ( 519158 404558 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 334764 ) ( 2605296 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 334764 ) ( 2012110 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 334764 ) ( 2160114 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 334764 ) ( 2312872 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 334764 ) ( 2460876 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 334764 ) ( 1399897 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 334764 ) ( 1705151 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 334764 ) ( 1547169 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 334764 ) ( 1852423 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 334764 ) ( 962359 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 334764 ) ( 1267820 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 334764 ) ( 824355 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 334764 ) ( 1129816 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 334764 ) ( 69904 422490 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 334764 ) ( 657162 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 334764 ) ( 217908 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 334764 ) ( 371154 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 334764 ) ( 519158 348456 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 333387 ) ( 1985371 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 333387 ) ( 2605296 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 315455 ) ( 2012110 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 315455 ) ( 2160114 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 315455 ) ( 2312872 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 315455 ) ( 2460876 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 333387 ) ( 1680117 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 315455 ) ( 1399897 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 315455 ) ( 1705151 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 315455 ) ( 1547169 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 315455 ) ( 1852423 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 333387 ) ( 962359 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 333387 ) ( 1267820 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 315455 ) ( 962359 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 315455 ) ( 1267820 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 315455 ) ( 824355 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 315455 ) ( 1129816 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 333387 ) ( 657162 334764 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 315455 ) ( 657162 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 315455 ) ( 217908 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 315455 ) ( 371154 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 315455 ) ( 519158 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 207908 259353 ) ( 217908 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 355912 259353 ) ( 371154 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 509158 259353 ) ( 519158 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 259353 ) ( 824355 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 259353 ) ( 1129816 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 259353 ) ( 1542113 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 259353 ) ( 1847367 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 259353 ) ( 2155058 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 259353 ) ( 2307816 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 259353 ) ( 2455820 315455 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 245661 ) ( 69904 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 245661 ) ( 657162 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 245661 ) ( 217908 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 245661 ) ( 371154 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 245661 ) ( 519158 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 245661 ) ( 962359 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 245661 ) ( 1267820 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 245661 ) ( 824355 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 245661 ) ( 1129816 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 245661 ) ( 1399897 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 245661 ) ( 1705151 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 245661 ) ( 1547169 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 245661 ) ( 1852423 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 245661 ) ( 2605296 333387 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 245661 ) ( 2012110 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 245661 ) ( 2160114 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 245661 ) ( 2312872 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 245661 ) ( 2460876 259353 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 238811 ) ( 657162 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 220879 ) ( 657162 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 220879 ) ( 217908 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 220879 ) ( 371154 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 220879 ) ( 519158 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 238811 ) ( 1267820 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 220879 ) ( 962359 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 220879 ) ( 1267820 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 220879 ) ( 824355 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 220879 ) ( 1129816 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 238811 ) ( 1680117 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 220879 ) ( 1399897 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 220879 ) ( 1705151 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 220879 ) ( 1547169 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 220879 ) ( 1852423 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 238811 ) ( 2605296 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 220879 ) ( 2012110 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 220879 ) ( 2160114 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 220879 ) ( 2312872 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 220879 ) ( 2460876 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 238811 ) ( 1985371 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 164777 ) ( 2155058 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 164777 ) ( 2307816 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 164777 ) ( 2455820 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 164777 ) ( 1542113 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 164777 ) ( 1847367 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 238811 ) ( 962359 245661 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 164777 ) ( 824355 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 164777 ) ( 1129816 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 207908 164777 ) ( 217908 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 355912 164777 ) ( 371154 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 509158 164777 ) ( 519158 220879 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 151085 ) ( 2605296 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 151085 ) ( 2012110 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 151085 ) ( 2160114 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 151085 ) ( 2312872 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 151085 ) ( 2460876 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 151085 ) ( 1399897 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 151085 ) ( 1705151 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 151085 ) ( 1547169 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 151085 ) ( 1852423 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 151085 ) ( 962359 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 151085 ) ( 1267820 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 151085 ) ( 824355 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 151085 ) ( 1129816 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 151085 ) ( 69904 238811 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 151085 ) ( 657162 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 151085 ) ( 217908 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 151085 ) ( 371154 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 151085 ) ( 519158 164777 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 149171 ) ( 1985371 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 149171 ) ( 2605296 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 131239 ) ( 2012110 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 131239 ) ( 2160114 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 131239 ) ( 2312872 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 131239 ) ( 2460876 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 149171 ) ( 1680117 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 131239 ) ( 1399897 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 131239 ) ( 1705151 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 131239 ) ( 1547169 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 131239 ) ( 1852423 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 149171 ) ( 962359 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 149171 ) ( 1267820 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 131239 ) ( 962359 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 131239 ) ( 1267820 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 131239 ) ( 824355 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 131239 ) ( 1129816 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 149171 ) ( 657162 151085 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 131239 ) ( 657162 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 131239 ) ( 217908 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 131239 ) ( 371154 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 131239 ) ( 519158 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 207908 75137 ) ( 217908 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 355912 75137 ) ( 371154 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 509158 75137 ) ( 519158 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 815087 75137 ) ( 824355 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1120548 75137 ) ( 1129816 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 75137 ) ( 1542113 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 75137 ) ( 1847367 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 75137 ) ( 2155058 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 75137 ) ( 2307816 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 75137 ) ( 2455820 131239 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 60000 ) ( 1985371 61445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2593824 61445 ) ( 2605296 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 61445 ) ( 2012110 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2145058 61445 ) ( 2160114 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2293062 61445 ) ( 2312872 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2445820 61445 ) ( 2460876 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 2007054 60000 ) ( 2605296 61445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 61445 ) ( 1399897 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1700095 61445 ) ( 1705151 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1532845 61445 ) ( 1547169 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1838099 61445 ) ( 1852423 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1394841 60000 ) ( 1680117 61445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 677083 60000 ) ( 962359 61445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 957303 61445 ) ( 962359 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1262764 61445 ) ( 1267820 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 810031 61445 ) ( 824355 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 1115492 61445 ) ( 1129816 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 982544 60000 ) ( 1267820 61445 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 61445 ) ( 69904 149171 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 652106 61445 ) ( 657162 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 202852 61445 ) ( 217908 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 350856 61445 ) ( 371154 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 504102 61445 ) ( 519158 75137 ) ;
+ - PLACEMENT + SOFT
+   RECT ( 60000 60000 ) ( 657162 61445 ) ;
+END BLOCKAGES
+END DESIGN
