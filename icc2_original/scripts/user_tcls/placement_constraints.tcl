@@ -10,12 +10,12 @@ set_app_options -name place.fix_hard_macros -value true
 
 #set_app_options -name ccd.max_prepone -value 0.1
 #set_app_options -name ccd.max_postpone -value 0.1
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_20l.tcl
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_20sl.tcl
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_24l.tcl
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_24sl.tcl
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_28l.tcl
-source /KSRC_lab_share/usr/ayassin/eda_work5/ayassin/BIGDIV_GDS_5GHz_Temp_Copy/icc2_original/scripts/user_tcls/custom_placement/custom_placement_settings_28sl.tcl
+source ./custom_placement/custom_placement_settings_20l.tcl
+source ./custom_placement/custom_placement_settings_20sl.tcl
+source ./custom_placement/custom_placement_settings_24l.tcl
+source ./custom_placement/custom_placement_settings_24sl.tcl
+source ./custom_placement/custom_placement_settings_28l.tcl
+source ./custom_placement/custom_placement_settings_28sl.tcl
 
 set_app_options -name design.high_fanout_net_threshold -value 65000
 
