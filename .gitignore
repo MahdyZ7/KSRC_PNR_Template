@@ -1,0 +1,31 @@
+# Simulation outputs
+*.vcd
+*.wlf
+*.log
+#work/
+transcript
+vsim.wlf
+
+# Synthesis outputs
+*.ddc
+*.svf
+*.pvl
+command.log
+default.svf
+
+# PnR outputs
+*.def
+*.gds
+*.spef
+*.sdf
+encounter.log*
+innovus.log*
+
+# Temporary files
+*.tmp
+*~
+.#*
+\#*#
+
+# Tool specific
+.synopsys_*
