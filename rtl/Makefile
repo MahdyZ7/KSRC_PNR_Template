@@ -1,4 +1,3 @@
-
 # Makefile for Questa Sim simulation
 
 # Colors
@@ -19,10 +18,10 @@ GTKWAVE := gtkwave
 
 
 # Source files (add your .sv files here)
-SV_FILES := $(shell find $(ProjectRtlDir) -name "*v")
+SV_FILES := $(shell find . -name "*sv")
 
 # Testbench top module
-TB_TOP = $(TestBenchTopModule)
+TB_TOP = tb_traffic_light_controller
 
 # Library name
 LIB_NAME := $(shell echo $(TB_TOP) | tr '[:lower:]' '[:upper:]')
@@ -36,7 +35,7 @@ all: compile simulate
 icarus: icarus_run
 
 # Create library
-create_lib: SV_FILES
+create_lib:
 	@echo "$(BLUE)>> Create a logical library $(LIB_NAME) $(NC)"
 	$(VLIB) -quiet $(LIB_NAME)
 
