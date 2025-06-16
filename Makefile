@@ -36,7 +36,7 @@ all: compile simulate
 icarus: icarus_run
 
 # Create library
-create_lib: SV_FILES
+create_lib: $(SV_FILES)
 	@echo "$(BLUE)>> Create a logical library $(LIB_NAME) $(NC)"
 	$(VLIB) -quiet $(LIB_NAME)
 
