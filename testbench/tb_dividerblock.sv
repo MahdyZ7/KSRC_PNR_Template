@@ -120,81 +120,102 @@ module tb_dividerblock;
     
     // Verify duty cycle
     $display("\n--- Duty Cycle Verification ---");
-    $display("div4 duty cycle: %.2f%% (target: 50%%)", 
-             (div4_high_count * 100.0) / clk_count);
-    $display("div8 duty cycle: %.2f%% (target: 50%%)", 
-             (div8_high_count * 100.0) / clk_count);
-    $display("div9 duty cycle: %.2f%% (target: 50%%)", 
-             (div9_high_count * 100.0) / clk_count);
-    $display("div12 duty cycle: %.2f%% (target: 50%%)", 
-             (div12_high_count * 100.0) / clk_count);
-    $display("div80 duty cycle: %.2f%% (target: 50%%)", 
-             (div80_high_count * 100.0) / clk_count);
-    
+	assert ((div4_high_count * 100.0) / clk_count == 50.0)
+	  $display("div4 duty cycle: %.2f%% (target: 50%%)", 
+			   (div4_high_count * 100.0) / clk_count);
+	else
+	  $error("div4 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+			   (div4_high_count * 100.0) / clk_count);
+    assert ((div8_high_count * 100.0) / clk_count == 50.0)
+      $display("div8 duty cycle: %.2f%% (target: 50%%)", 
+               (div8_high_count * 100.0) / clk_count);
+	else
+	  $error("div8 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+			   (div8_high_count * 100.0) / clk_count);
+    assert ((div9_high_count * 100.0) / clk_count == 50.0)
+      $display("div9 duty cycle: %.2f%% (target: 50%%)", 
+               (div9_high_count * 100.0) / clk_count);
+	else
+	  $error("div9 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+			   (div9_high_count * 100.0) / clk_count);
+    assert ((div12_high_count * 100.0) / clk_count == 50.0)
+      $display("div12 duty cycle: %.2f%% (target: 50%%)", 
+               (div12_high_count * 100.0) / clk_count);
+	else
+	  $error("div12 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+			   (div12_high_count * 100.0) / clk_count);
+    assert ((div80_high_count * 100.0) / clk_count == 50.0)
+      $display("div80 duty cycle: %.2f%% (target: 50%%)", 
+               (div80_high_count * 100.0) / clk_count);
+	else
+	  $error("div80 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+			   (div80_high_count * 100.0) / clk_count);
+	$display("=====================================");
+
     // Check if division ratios are within acceptable range
     $display("\n--- Pass/Fail Verification ---");
     // div4 should have approximately clk_count/2 edges
-    if (div4_edges >= clk_count/2.1 && div4_edges <= clk_count/1.9)
+    assert (div4_edges >= clk_count/2.1 && div4_edges <= clk_count/1.9)
       $display("div4 frequency PASS");
     else
-      $display("div4 frequency FAIL - Expected ~%d edges, got %d", clk_count/2, div4_edges);
+      $error("div4 frequency FAIL - Expected ~%d edges, got %d", clk_count/2, div4_edges);
     
     // div8 should have approximately clk_count/4 edges
-    if (div8_edges >= clk_count/4.1 && div8_edges <= clk_count/3.9)
+    assert (div8_edges >= clk_count/4.1 && div8_edges <= clk_count/3.9)
       $display("div8 frequency PASS");
     else
-      $display("div8 frequency FAIL - Expected ~%d edges, got %d", clk_count/4, div8_edges);
+      $error("div8 frequency FAIL - Expected ~%d edges, got %d", clk_count/4, div8_edges);
     
     // div9 should have approximately clk_count/4.5 edges
-    if (div9_edges >= clk_count/4.6 && div9_edges <= clk_count/4.4)
+    assert (div9_edges >= clk_count/4.6 && div9_edges <= clk_count/4.4)
       $display("div9 frequency PASS");
     else
-      $display("div9 frequency FAIL - Expected ~%d edges, got %d", clk_count/4.5, div9_edges);
+      $error("div9 frequency FAIL - Expected ~%d edges, got %d", clk_count/4.5, div9_edges);
     
     // div12 should have approximately clk_count/6 edges
-    if (div12_edges >= clk_count/6.1 && div12_edges <= clk_count/5.9)
+    assert (div12_edges >= clk_count/6.1 && div12_edges <= clk_count/5.9)
       $display("div12 frequency PASS");
     else
-      $display("div12 frequency FAIL - Expected ~%d edges, got %d", clk_count/6, div12_edges);
+      $dierrorsplay("div12 frequency FAIL - Expected ~%d edges, got %d", clk_count/6, div12_edges);
     
     // div80 should have approximately clk_count/40 edges
-    if (div80_edges >= clk_count/42 && div80_edges <= clk_count/38)
+    assert (div80_edges >= clk_count/42 && div80_edges <= clk_count/38)
       $display("div80 frequency PASS");
     else
-      $display("div80 frequency FAIL - Expected ~%d edges, got %d", clk_count/40, div80_edges);
+      $error("div80 frequency FAIL - Expected ~%d edges, got %d", clk_count/40, div80_edges);
     
     // Check duty cycles (should be around 50% ±5%)
-    if (div4_high_count >= clk_count*0.45 && div4_high_count <= clk_count*0.55)
+    assert (div4_high_count >= clk_count*0.45 && div4_high_count <= clk_count*0.55)
       $display("div4 duty cycle PASS (%.2f%%)", (div4_high_count * 100.0) / clk_count);
     else
-      $display("div4 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+      $error("div4 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
                (div4_high_count * 100.0) / clk_count);
     
-    if (div8_high_count >= clk_count*0.45 && div8_high_count <= clk_count*0.55)
+    assert (div8_high_count >= clk_count*0.45 && div8_high_count <= clk_count*0.55)
       $display("div8 duty cycle PASS (%.2f%%)", (div8_high_count * 100.0) / clk_count);
     else
-      $display("div8 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+      $error("div8 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
                (div8_high_count * 100.0) / clk_count);
     
-    if (div9_high_count >= clk_count*0.45 && div9_high_count <= clk_count*0.55)
+    assert (div9_high_count >= clk_count*0.45 && div9_high_count <= clk_count*0.55)
       $display("div9 duty cycle PASS (%.2f%%)", (div9_high_count * 100.0) / clk_count);
     else
-      $display("div9 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+      $error("div9 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
                (div9_high_count * 100.0) / clk_count);
     
-    if (div12_high_count >= clk_count*0.45 && div12_high_count <= clk_count*0.55)
+    assert (div12_high_count >= clk_count*0.45 && div12_high_count <= clk_count*0.55)
       $display("div12 duty cycle PASS (%.2f%%)", (div12_high_count * 100.0) / clk_count);
     else
-      $display("div12 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+      $error("div12 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
                (div12_high_count * 100.0) / clk_count);
     
-    if (div80_high_count >= clk_count*0.45 && div80_high_count <= clk_count*0.55)
+    assert (div80_high_count >= clk_count*0.45 && div80_high_count <= clk_count*0.55)
       $display("div80 duty cycle PASS (%.2f%%)", (div80_high_count * 100.0) / clk_count);
     else
-      $display("div80 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
+      $error("div80 duty cycle FAIL - Expected ~50%%, got %.2f%%", 
                (div80_high_count * 100.0) / clk_count);
     
-    $finish;
+    $stop;
   end
   
   // Waveform generation
