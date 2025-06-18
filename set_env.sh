@@ -6,4 +6,4 @@ export ProjectRtlDir="${ProjectDir}/rtl"
 export ProjectTBDir="${ProjectDir}/testbench"
 export ProjectSimDir="${ProjectDir}/simulation"
 
-export TestBenchTopModule="tb_${TopModule}"
+export TestBenchTopModule="${ProjectTBDir}/tb_${TopModule}"

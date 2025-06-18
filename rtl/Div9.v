@@ -4,31 +4,43 @@ module Div9(
 	output	div9
 );
 
-	reg	mid1;
-	reg	mid2;
-	reg	mid3;
-	reg	mid4;
-	// reg [3:0] cc;
+	// order is in kmap AB \ CD
+	// order in desgin DCBA
+	reg	midA;
+	reg	midB;
+	reg	midC;
+	reg	midD;
+	reg t1;
+	reg t2;
+	wire pt1;
+	wire pt2;
 
-	// assign count[0] = mid1;
-	// assign count[1] = mid2;
-	// assign count[2] = mid3;
-	// assign count[3] = mid4;
+	assign pt1 = ~midC & ~midD;
+	assign pt2 = midC & midD;
 	always @(posedge clk) begin
 		if (~reset) begin
-			mid1 <= 0;
-			mid2 <= 0;
-			mid3 <= 0;
-			mid4 <= 0;
-			// cc <= 0;
+			midA <= 0;
+			midB <= 0;
+			midC <= 0;
+			midD <= 0;
+			t1 <= 0;
 		end else begin
-			mid1 <= (~mid2) & (mid3 | ~mid4);
-			mid2 <= (~mid4) & (mid1 | mid2);
-			mid3 <= (~mid1) & (mid2 | mid4);
-			mid4 <= mid3;
-			// cc <= cc +1;
+			midD <= ~midC;
+			midC <= midA & (~midB | midC);
+			midB <= midA ^ midD;
+			midA <= midA & ~midB | midB & midD;
+			if (~midC & ~midD)
+				t1 <= ~t1;
 		end
 	end
-	assign div9 = (~mid4 & (mid1 | mid2)) | (clk & mid2);	
+	always @(negedge clk) begin
+		if (~reset)
+			t2 <= 0;
+		else begin
+			if(midC & midD)
+				t2 <= ~t2;
+		end
+	end
+	assign div9 = t1^t2;
 
 endmodule

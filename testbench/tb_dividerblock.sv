@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 1ps/1ps
 
 module tb_dividerblock;
   // Testbench signals
@@ -9,51 +9,56 @@ module tb_dividerblock;
   wire div9;
   wire div12;
   wire div80;
-  
-  // For VDD/VSS connections
-  wire VDD = 1'b1;
-  wire VSS = 1'b0;
+
   
   // Instantiate the Unit Under Test (UUT)
   dividerblock uut (
     .clk(clk),
     .reset(reset),
-    .VDD(VDD),
-    .VSS(VSS),
     .div4(div4),
     .div8(div8),
     .div9(div9),
     .div12(div12),
     .div80(div80)
   );
+
+  int half_period = 125; // Half period for 4GHz clock (125ps)
+  int period = 2 * half_period; // Full period for 4GHz clock (250ps)
+  int reset_duration = period + 10; // Reset duration (250ps + 10ps = 260ps)
+  int test_cycles = 720000; // LCM of all dividers' periods * 1000 (to capture multiple cycles)
   
-  // Clock generation - 100MHz reference clock
+  // Clock generation - 4GHz reference clock
   initial begin
     clk = 0;
-    forever #5 clk = ~clk; // 10ns period (100MHz)
+    forever #half_period clk = ~clk; // 125ps period (4GHz clock)
   end
   
   // Counters to verify division ratios
-  int clk_count = 0;
-  int div4_high_count = 0;
-  int div8_high_count = 0;
-  int div9_high_count = 0;
-  int div12_high_count = 0;
-  int div80_high_count = 0;
+  real clk_count = 0;
+  real div4_high_count = 0;
+  real div8_high_count = 0;
+  real div9_high_count = 0;
+  real div12_high_count = 0;
+  real div80_high_count = 0;
   
   // Count clock cycles and measure duty cycle
-  always @(posedge clk) begin
+  always @(edge clk) begin
     if (reset) begin
-      clk_count++;
+      clk_count+=0.5;
       
-      if (div4 == 1'b1) div4_high_count++;
-      if (div8 == 1'b1) div8_high_count++;
-      if (div9 == 1'b1) div9_high_count++;
-      if (div12 == 1'b1) div12_high_count++;
-      if (div80 == 1'b1) div80_high_count++;
+      if (div4 == 1'b1) div4_high_count+=0.5;
+      if (div8 == 1'b1) div8_high_count+=0.5;
+      if (div9 == 1'b1) div9_high_count+=0.5;
+      if (div12 == 1'b1) div12_high_count+=0.5;
+      if (div80 == 1'b1) div80_high_count+=0.5;
     end
   end
-  
+
+//   always @(negedge clk) begin
+// 	if (reset) begin
+// 		if (div9 == 1'b1) div9_high_count++;
+// 	end
+//   end
   // Edge counters for frequency verification
   int div4_edges = 0;
   int div8_edges = 0;
@@ -90,13 +95,12 @@ module tb_dividerblock;
     reset = 0;
     
     // Apply reset
-    #20;
+    #reset_duration;
     reset = 1;
     
     // Run simulation for enough cycles to capture multiple periods of all dividers
-    // Need at least 2*80 = 160 cycles for div80, using 1000 to be safe
-    #10000;
-    
+    #test_cycles;
+
     // Print results
     $display("\n==== Divider Verification Results ====");
     $display("Total clock cycles: %d", clk_count);
